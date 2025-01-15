@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - Aalim Chowdhry Fine Art</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: #123b020a;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+            color: #ffd700;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        header {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .description {
+            font-size: 18px;
+            margin-bottom: 40px;
+            font-weight: lighter;
+        }
+
+        .shop-items {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .shop-item {
+            background: rgba(0, 0, 0, 0.7);
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            width: 250px;
+            text-align: left;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .shop-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.4);
+        }
+
+        .shop-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .shop-item img:hover {
+            transform: scale(1.1);
+        }
+
+        .shop-item p {
+            margin: 10px 0;
+        }
+
+        .buy-btn {
+            padding: 10px 20px;
+            background-color: #ffd700;
+            color: #000;
+            font-size: 16px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+
+        .buy-btn:hover {
+            background-color: #ffc107;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="sketchbook.html">Sketchbook</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="content">
+        <header>Shop</header>
+        <div class="description">
+            Browse and purchase exclusive prints, paintings, and artworks by Aalim Chowdhry. Bring a piece of the artist's vision into your space.
+        </div>
+
+        <div class="shop-items">
+            <div class="shop-item">
+                <a href="product1.html">
+                    <img src="Shop/product1.jpg" alt="Product 1">
+                    <p><strong>Product Name 1</strong></p>
+                    <p>£50</p>
+                </a>
+                <a href="buy1.html" class="buy-btn">Buy Now</a>
+            </div>
+
+            <div class="shop-item">
+                <a href="product2.html">
+                    <img src="Shop/product2.jpg" alt="Product 2">
+                    <p><strong>Product Name 2</strong></p>
+                    <p>£60</p>
+                </a>
+                <a href="buy2.html" class="buy-btn">Buy Now</a>
+            </div>
+
+            <!-- Add more products similarly -->
+        </div>
+    </div>
+</body>
+</html>
